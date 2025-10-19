@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Oliver Coronel - Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+</head>
+<body>
+    <!--Intro Screen-->
+    <div class="intro-screen" id="introScreen">
+    <div class="intro-bg">
+        <canvas id="three-bg"></canvas>
+    </div>
+
+    <div class="intro-content">
+        <h1 class="intro-title">Oli’s Portfolio</h1>
+        <p class="intro-text">Want to know about me?</p>
+        <button class="intro-btn" id="enterSiteBtn">View My Info</button>
+    </div>
+    </div>
+
+
+
+    <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">Oli's Portfolio</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="hire-btn" id="hireBtn">Hire Me</button></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Code<br>Create<br>Innovate</h1>
+            <p class="hero-subtitle">UI/UX Designer | Developer | Creator</p>
+        </div>
+        <div class="hero-image">
+            <img src="oliver.jpg" alt="Profile">
+        </div>
+        <div class="scroll-down">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="oli.jpg" alt="About Me">
+            </div>
+            <div class="about-text">
+                <p>I'm Mark Oliver Coronel a UI/UX designer, developer, and creative thinker based in Manguisoc, Mercedes, Daet Camarines Norte. I craft digital experiences that blend minimalist aesthetics with functional design.</p>
+                <p>With a passion for clean interfaces and thoughtful interactions, I transform ideas into engaging, user-centered web experiences. My work combines creativity, precision, and purpose to bring modern design to life.</p>
+                <p>Beyond coding and design, I’m driven by curiosity — exploring new technologies, experimenting with visual styles, and finding inspiration in art, fashion, and architecture.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <h2 class="gallery-title">My Gallery</h2>
+
+<!-- Music Control -->
+<div class="music-control">
+  <button id="musicToggle" class="music-btn">
+    <i class="fa-solid fa-volume-off"></i> Music
+  </button>
+
+  <!-- Spotify Player -->
+  <div id="spotifyPlayer" class="spotify-embed">
+    <iframe id="spotifyIframe" style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/0NJAqnvbF6vzripOB7PclP?utm_source=generator"
+      width="300" height="80" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+  <div class="carousel-container">
+    <div class="carousel-3d" id="carousel">
+      <div class="carousel-item" data-index="0">
+        <img src="oliver.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="carousel-item" data-index="1">
+        <img src="oli.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="carousel-item" data-index="2">
+        <img src="oli1.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="carousel-item" data-index="3">
+        <img src="oli2.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="carousel-item" data-index="4">
+        <img src="oli3.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="carousel-item" data-index="5">
+        <img src="oli4.jpg" alt="Gallery Image 6">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <img id="modalImg" src="" alt="Expanded Image">
+  </div>
+</div>
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Latest Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="fitpulse.jpg" alt="Project 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Fitpulse</h3>
+                        <p>FitPulse is a health and wellness web application designed to help users monitor and improve their daily lifestyle. The platform tracks key health aspects such as sleep, exercise, and nutrition, providing personalized insights for maintaining a balanced and fit body.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="healthieryou.jpg" alt="Project 2">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>Healthier You</h3>
+                        <p>Healthier You is a modern web platform designed for licensed nutritionists and dietitians to streamline their client booking process. The website provides an intuitive interface where clients can easily schedule consultations, access nutrition programs, and connect directly with professionals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="itourmercedes.jpg" alt="Project 3">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                        <h3>iTour Mercedes</h3>
+                        <p>iTourMercedes is an information and booking website designed to promote tourism in Mercedes, Camarines Norte. The platform allows tourists to explore island destinations, view travel details, and conveniently book or inquire online.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<section class="skills-section" id="skills">
+  <div class="section-header">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-subtitle">
+      Technologies and tools I use to design and build digital experiences.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+      <h3 class="skill-name">HTML</h3>
+      <p class="skill-description">
+        Structures the content and foundation of web pages.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+      <h3 class="skill-name">CSS</h3>
+      <p class="skill-description">
+        Styles and crafts responsive, elegant visual designs.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+      <h3 class="skill-name">JavaScript</h3>
+      <p class="skill-description">
+        Adds interactivity and dynamic functionality to websites.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+      <h3 class="skill-name">Java</h3>
+      <p class="skill-description">
+        A powerful language for backend and app development.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+      <h3 class="skill-name">MySQL</h3>
+      <p class="skill-description">
+        Manages structured data and relational databases efficiently.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+      <h3 class="skill-name">Python</h3>
+      <p class="skill-description">
+        Used for automation, data analysis, and web applications.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+      <h3 class="skill-name">Figma</h3>
+      <p class="skill-description">
+        Design tool for prototyping modern and intuitive interfaces.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p class="contact-intro">Let's work together or just say hello.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Contact Info (Left) -->
+    <div class="footer-left">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">oliver002118@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:+639123456789">+63 927 976 9057</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Daet, Camarines Norte, Philippines</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links (Center) -->
+    <div class="footer-center">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons (Right) -->
+    <div class="footer-right">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/oliiicoronel/" aria-label="Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/VerCode123/" aria-label="GitHub" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mark-oliver-coronel-28910238a/" aria-label="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/oliver002118" aria-label="Twitter" target="_blank">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mark Oliver Coronel. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
